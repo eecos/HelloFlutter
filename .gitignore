@@ -4,7 +4,7 @@
 .dart_tool/
 .packages
 build/
-node_modules
+
 # If you're building an application, you may want to check-in your pubspec.lock
 pubspec.lock
 
@@ -21,3 +21,6 @@ doc/api/
 *.js.deps
 *.js.map
 
+# node gitignore config
+node_modules
+yarn.lock
