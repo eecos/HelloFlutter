@@ -21,6 +21,12 @@ doc/api/
 *.js.deps
 *.js.map
 
+# idea
+*.idea
+*.iml
+.gradle
+local.properties
+
 # node gitignore config
 node_modules
 yarn.lock
