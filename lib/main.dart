@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_flutter/widget/createMaterialColor.dart';
 
+import 'example/app_bar.dart';
 import 'example/update_button.dart';
 
 void main() {
@@ -37,20 +38,23 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "HelloFlutter",
       theme: ThemeData(
-        //brightness: Brightness.dark,
-        // 为primarySwatch使用自定义颜色16进制值
-        primarySwatch: createMaterialColor(Color(0xFF4192F4)),
-        //primarySwatch: Colors.red,
-        primaryColor: Colors.white,
-        dividerColor: Color(0xffeeeeee),
-        scaffoldBackgroundColor: Colors.blue,
-        textTheme: TextTheme(bodyText2: TextStyle(color: Colors.purple)),
+        //brightness: Brightness.dark
+        //为primarySwatch使用自定义颜色16进制值
+        //primarySwatch: createMaterialColor(Color(0xFF4192F4)),
+        primarySwatch: Colors.blue,
+        //primaryColor: Colors.white,
+        //dividerColor: Color(0xffeeeeee),
+        //scaffoldBackgroundColor: Colors.blue,
+        //textTheme: TextTheme(bodyText2: TextStyle(color: Colors.purple)),
       ),
-      home: UpdateButton(),
-      color:  Color(0xff4192F4),
-      debugShowMaterialGrid: true,
-      showPerformanceOverlay: true,
-      checkerboardRasterCacheImages: true,
+      //home: UpdateButton();
+      home: SafeArea(
+        child: MyScaffold(),
+      ),
+      //color:  Color(0xff4192F4),
+      //debugShowMaterialGrid: true,
+      //showPerformanceOverlay: true,
+      //checkerboardRasterCacheImages: true,
     );
   }
 }
