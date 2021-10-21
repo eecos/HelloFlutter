@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
       ),
       //home: UpdateButton();
       home: SafeArea(
-        child: MyScaffold(),
+        child: UpdateButton(),
       ),
       //color:  Color(0xff4192F4),
       //debugShowMaterialGrid: true,

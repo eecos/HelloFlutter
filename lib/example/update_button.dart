@@ -9,25 +9,21 @@ class UpdateButton extends StatefulWidget {
 }
 
 class _UpdateButtonState extends State<UpdateButton> {
-
-  final defaultText='I Like Flutter!';
+  final defaultText = 'I Like Flutter!';
 
   //Default placeholder text.
   String textToShow = 'I Like Flutter!';
   String _updateTextToShow = 'Flutter is Awesome!';
 
-
-  void _updateText(){
-
+  void _updateText() {
     setState(() {
-      LogUtil.e("textToShow==defaultText=${textToShow==defaultText}");
+      LogUtil.e("textToShow==defaultText=${textToShow == defaultText}");
       // Update the text.
-      if(textToShow==defaultText){
+      if (textToShow == defaultText) {
         textToShow = _updateTextToShow;
-      }else{
-        textToShow= defaultText;
+      } else {
+        textToShow = defaultText;
       }
-
     });
   }
 
@@ -55,7 +51,26 @@ class _UpdateButtonState extends State<UpdateButton> {
      */
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sample App'),
+        flexibleSpace: Image(
+          image: AssetImage('assets/images/logo-white.png'),
+          fit: BoxFit.none,
+        ),
+        actions: <Widget>[
+          new FlatButton(
+            child: new Text('Trips',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontFamily: "Montserrat"
+                ),
+                textAlign: TextAlign.center),
+            // action button
+            //icon: Icon(Icons.ice_skating),
+            onPressed: () {
+              _updateText();
+            },
+          ),
+        ],
       ),
       body: Center(child: Text(textToShow)),
       floatingActionButton: FloatingActionButton(
