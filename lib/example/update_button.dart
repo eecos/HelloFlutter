@@ -1,6 +1,8 @@
 import 'package:flustars/flustars.dart';
 import 'package:flutter/material.dart';
 
+import 'first_screen.dart';
+
 class UpdateButton extends StatefulWidget {
   const UpdateButton({Key? key}) : super(key: key);
 
@@ -25,6 +27,10 @@ class _UpdateButtonState extends State<UpdateButton> {
         textToShow = defaultText;
       }
     });
+  }
+
+  void _SecondScreen(){
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondScreen()));
   }
 
   @override
@@ -53,7 +59,11 @@ class _UpdateButtonState extends State<UpdateButton> {
       appBar: AppBar(
         flexibleSpace: Image(
           image: AssetImage('assets/images/logo-white.png'),
-          fit: BoxFit.none,
+          width: 118,
+          height: 60,
+          //缩放模式
+          fit: BoxFit.scaleDown,
+
         ),
         actions: <Widget>[
           new FlatButton(
@@ -67,7 +77,7 @@ class _UpdateButtonState extends State<UpdateButton> {
             // action button
             //icon: Icon(Icons.ice_skating),
             onPressed: () {
-              _updateText();
+              _SecondScreen();
             },
           ),
         ],

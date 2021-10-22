@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hello_flutter/widget/createMaterialColor.dart';
 
 import 'example/app_bar.dart';
+import 'example/demo02.dart';
+import 'example/formDemo.dart';
 import 'example/update_button.dart';
 
 void main() {
@@ -49,7 +51,7 @@ class MyApp extends StatelessWidget {
       ),
       //home: UpdateButton();
       home: SafeArea(
-        child: UpdateButton(),
+        child: FormTestRoute(),
       ),
       //color:  Color(0xff4192F4),
       //debugShowMaterialGrid: true,
