@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:hello_flutter/example/demo1.dart';
 import 'package:hello_flutter/example/official_example.dart';
 
+import 'example/demo2.dart';
+import 'example/demo3.dart';
+
 void main() {
   runApp(const RunMyApp());
 }
@@ -22,7 +25,8 @@ class _RunMyAppState extends State<RunMyApp> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Demo1(),
+      //home: ChartApp(),
+      home: Demo3(),
     );
   }
 }
