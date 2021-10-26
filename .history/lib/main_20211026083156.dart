@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hello_flutter/example/demo1.dart';
 import 'package:hello_flutter/example/official_example.dart';
 
 void main() {
@@ -16,13 +15,7 @@ class RunMyApp extends StatefulWidget {
 class _RunMyAppState extends State<RunMyApp> {
   @override
   Widget build(BuildContext context) {
-    /// return const MyApp();
-    return MaterialApp(
-      title: 'subtitle_bar_partial_fixed',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Demo1(),
-    );
+   /// return const MyApp();
+   return 
   }
 }
