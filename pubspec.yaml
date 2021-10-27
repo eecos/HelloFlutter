@@ -43,6 +43,9 @@ dependencies:
   syncfusion_flutter_gauges: ^19.3.46
   syncfusion_flutter_sliders: ^19.3.47
   syncfusion_flutter_core: ^19.3.47
+  fluttertoast: ^8.0.8
+  bottom_bar_with_sheet: ^2.0.1
+  wave: ^0.2.0
 
 dev_dependencies:
   flutter_test:

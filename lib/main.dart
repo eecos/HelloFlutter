@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hello_flutter/example/demo1.dart';
+import 'package:hello_flutter/example/demo4.dart';
+import 'package:hello_flutter/example/demo5.dart';
+import 'package:hello_flutter/example/demo6.dart';
+import 'package:hello_flutter/example/demo7.dart';
 import 'package:hello_flutter/example/official_example.dart';
 
-import 'example/demo2.dart';
-import 'example/demo3.dart';
 
 void main() {
   runApp(const RunMyApp());
@@ -26,7 +28,10 @@ class _RunMyAppState extends State<RunMyApp> {
         primarySwatch: Colors.blue,
       ),
       //home: ChartApp(),
-      home: Demo3(),
+      //home: BottomSheetDemo(),
+      //home: DialogPage(),
+      //home: DottomBarWithSheet(),
+      home: WaveDemoApp(),
     );
   }
 }
