@@ -69,12 +69,15 @@ class _RunMyAppState extends State<RunMyApp> {
       width  == $_width
       height == $_height
       ''';
-      if (_width == 320) {
+      if (_width == 375) {
         _isAdd = !_isAdd;
-      } else if (_width == 299) {
+        print('状态改变---$_isAdd');
+      } else if (_width == 275) {
         _isAdd = !_isAdd;
+        print('状态改变---$_isAdd');
       }
-      _isAdd ? _width++ : _width--;
+      _isAdd ? _width+=25 : _width-=25;
+      _isAdd ? _height+=25 : _height-=25;
     });
   }
 }
