@@ -30,3 +30,5 @@ local.properties
 # node gitignore config
 node_modules
 yarn.lock
+
+lib/generated_plugin_registrant.dart
