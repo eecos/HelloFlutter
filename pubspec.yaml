@@ -34,7 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons fonts to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  #common_utils: ^2.0.2  # 工具类(适用于纯Dart项目) https://pub.dev/packages/common_utils
+  common_utils: ^2.0.2  # 工具类(适用于纯Dart项目) https://pub.dev/packages/common_utils
   flustars: ^2.0.1 #工具类(Flutter项目) https://pub.dev/packages/common_utils
   curved_navigation_bar: ^1.0.1
   new_gradient_app_bar: ^0.2.0
@@ -46,6 +46,10 @@ dependencies:
   fluttertoast: ^8.0.8
   bottom_bar_with_sheet: ^2.0.1
   wave: ^0.2.0
+  #################地图需要导入############
+#  amap_all_fluttify: ^0.12.0
+#  permission_handler: ^4.4.0
+#  decorated_flutter: ^0.11.0+1
 
 dev_dependencies:
   flutter_test:
