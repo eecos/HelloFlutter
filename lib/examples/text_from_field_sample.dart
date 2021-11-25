@@ -88,7 +88,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               onChanged: (String? value) {
                 print(value);
                 setState(() {
-                  if (value != null && _isSubmit == false) {
+                  if (value != null && _isSubmit==false) {
                     print('========');
                     _isSubmit = true;
                   } else if (value == null || value.isEmpty) {
