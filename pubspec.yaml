@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  progress_state_button: ^1.0.4
 
 dev_dependencies:
   flutter_test:
@@ -87,3 +88,44 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/images/
+    - assets/svg/
+
+  fonts:
+    - family: Montserrat-Medium
+      fonts:
+        - asset: assets/fonts/Montserrat-Medium.ttf
+    - family: Montserrat-Bold
+      fonts:
+        - asset: assets/fonts/Montserrat-Bold.ttf
+    - family: Montserrat-Black
+      fonts:
+        - asset: assets/fonts/Montserrat-Black.ttf
+    - family: Montserrat-ExtraBold
+      fonts:
+        - asset: assets/fonts/Montserrat-ExtraBold.ttf
+    - family: Montserrat-Hairline
+      fonts:
+        - asset: assets/fonts/Montserrat-Hairline.ttf
+    - family: Montserrat-Light
+      fonts:
+        - asset: assets/fonts/Montserrat-Light.ttf
+    - family: Montserrat-Regular
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+    - family: Montserrat-SemiBold
+      fonts:
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+    - family: Montserrat-UltraLight
+      fonts:
+        - asset: assets/fonts/Montserrat-UltraLight.ttf
+    - family: Spantaran
+      fonts:
+        - asset: assets/fonts/Spantaran.ttf
+    - family: Avenir-Book
+      fonts:
+        - asset: assets/fonts/Avenir-Book.ttf
+    - family: Avenir-Medium
+      fonts:
+        - asset: assets/fonts/Avenir-Medium.otf
