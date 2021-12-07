@@ -25,7 +25,8 @@ class MyApp extends StatelessWidget {
 }
 
 class ProgressButtonHomePage extends StatefulWidget {
-  ProgressButtonHomePage({Key? key, required this.title}) : super(key: key);
+  const ProgressButtonHomePage({Key? key, required this.title})
+      : super(key: key);
 
   final String title;
 
